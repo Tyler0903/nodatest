@@ -1,0 +1,144 @@
+$primary-color: #ab1e14;
+$secondary-color: #023C78;
+$secondary-light: #1183F7;
+$primary-dark: #5E0802;
+
+html,
+body {
+    height: 100%;
+}
+
+.display-none {
+    display: none;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-primary {
+	color: $primary-color;
+}
+
+.text-secondary {
+	/*color: "Secondary Color";*/
+}
+
+.text-light {
+    color: #999 !important;
+}
+
+/* Start colornav.js components */
+.bg-transparent {
+    background: transparent;	
+	/*Transition is part of the colornav.js to fill bg on scroll*/
+    transition: all .5s ease-in-out;
+}
+
+.bg-primary {
+    background: $primary-color;
+	/*Transition is part of the colornav.js to fill bg on scroll*/
+    transition: all .5s ease-in-out;
+}
+
+.logo-lg {
+    height: 65px;
+	/*Transition is part of the colornav.js to resize logo on scroll*/
+    transition: all .5s ease-in-out;
+}
+
+.logo-sm {
+    height: 45px;
+    /*Transition is part of the colornav.js to resize logo on scroll*/
+    transition: all .5s ease-in-out;
+}
+/* End colornav.js components */
+
+.jumbotron {
+    position: relative;
+    background-image: url('/images/cover.jpg');
+    height: 65vh;
+	/*margin-top moves jumbotron up to be behind the navbar, assuming navbar height of 50px*/
+    margin-top: -50px;
+    /*removes default margin-bottom*/
+    margin-bottom: 0px;
+    /*display and align-items to vertically center the jumbotron text*/
+	display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*t2-jumbotron for all tier 2 pages, typically just a smaller vh for jumbotron*/
+.t2-jumbotron {
+    height: 45vh !important;
+}
+
+/* padding for top and bottom of content */
+#body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Padding for top and bottom of footer */
+.site-footer {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: linear-gradient(132deg, #666666 0%, #222222 80%);
+}
+
+/* Assuming dark bg on footer */
+ul.footer-links > li > a {
+    color: #fff;
+}
+
+/* Start basic footer styling */
+ul.footer-links > li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+ul.footer-links {
+    list-style: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul.pages {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+}
+
+ul.legal {
+    font-size: .8em;
+    letter-spacing: 3px;
+}
+/* End basic footer styling */
+
+
+.emailbar {
+    padding: 10px 0 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    font-weight: 300;
+    min-width: 300px;
+}
+
+.copyright-bar {
+    margin-top: 3em;
+}
+
+.email-btn {
+    margin-top: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: $secondary-light;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}

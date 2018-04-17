@@ -1,0 +1,16 @@
+  {% if page.homepage %}
+  {% assign page_title = page.homepage %}
+  {% else %}
+  {% assign page_title = page.title - site.title %}
+  {% endif %}
+  <title>{{page_title}} | "Company Name"</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
