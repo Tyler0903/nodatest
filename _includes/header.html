@@ -1,49 +1,33 @@
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top bg-transparent">
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-transparent">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">
-        <img id="logo" class="logo-lg" src="http://via.placeholder.com/150x75" alt="site logo" />
-      </a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="/find-dodgeball">Find Dodgeball</a>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li>
-          <a href="/about-noda">About NODA</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schedules <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/schedules/tuesdays">Tuesdays - Draft</a></li>
-            <li><a href="/schedules/thursdays">Thursdays - Social</a></li>
-          </ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         </li>
-        <li>
-          <a href="/predictions">Predictions</a>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rules <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/rules/abbreviated-rules">Abbreviated Rules</a></li>
-            <li><a href="/rules/official-rulebook">Official Rulebook</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/more">More</a>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
     </div>
-    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container -->
 </nav>

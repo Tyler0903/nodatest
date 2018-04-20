@@ -68,6 +68,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: -1;
 }
 
 /*t2-jumbotron for all tier 2 pages, typically just a smaller vh for jumbotron*/
@@ -136,9 +137,12 @@ ul.legal {
     color: white;
     border: none;
     border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     background: $secondary-light;
     letter-spacing: .15em;
     text-transform: uppercase;
+}
+
+.mc-field-group, .clear {
+    display: inline-flex;
 }
