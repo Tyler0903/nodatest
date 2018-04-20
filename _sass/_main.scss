@@ -2,6 +2,8 @@ $primary-color: #ab1e14;
 $secondary-color: #023C78;
 $secondary-light: #1183F7;
 $primary-dark: #5E0802;
+$darker: #111;
+$darkest: #040404;
 
 html,
 body {
@@ -39,6 +41,14 @@ body {
     background: $primary-color;
 	/*Transition is part of the colornav.js to fill bg on scroll*/
     transition: all .5s ease-in-out;
+}
+
+.bg-darker {
+    background: $darker;
+}
+
+.bg-darkest {
+    background: #040404;
 }
 
 .logo-lg {
@@ -85,8 +95,7 @@ body {
 /* Padding for top and bottom of footer */
 .site-footer {
     padding-top: 3%;
-    padding-bottom: 3%;
-    background-image: linear-gradient(132deg, #666666 0%, #222222 80%);
+    background: $darker;
 }
 
 /* Assuming dark bg on footer */
@@ -129,7 +138,13 @@ ul.legal {
 }
 
 .copyright-bar {
-    margin-top: 3em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.copyright-text {
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .email-btn {
